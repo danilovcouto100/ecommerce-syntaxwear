@@ -1,0 +1,78 @@
+/* reset.css — Reset moderno e leve
+   Regras básicas: box-sizing, margem/padding, listas, imagens, inputs, botões e foco acessível.
+*/
+
+/* Remove margens/paddings e normalize box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  line-height: 1.15; /* melhora legibilidade */
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff;
+  color: #000;
+  text-rendering: optimizeLegibility;
+}
+
+/* Listas sem estilo por padrão */
+ol, ul { list-style: none; }
+
+/* Links: herdando cor e sem sublinhado por padrão */
+a { text-decoration: none; color: inherit; }
+
+/* Imagens e mídia: responsivas por padrão */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formularios: herdar fonte */
+input, button, textarea, select { font: inherit; }
+
+/* Botões sem estilos nativos */
+button { background: none; border: none; padding: 0; cursor: pointer; }
+
+/* Tabelas */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* Foco acessível padrão (pode ser customizado pelo projeto) */
+:focus {
+  outline: 3px solid rgba(37,99,235,0.6); /* azul semitransparente */
+  outline-offset: 2px;
+}
+
+/* Utility: tornar elementos escondidos acessíveis se necessário */
+[hidden] { display: none !important; }
