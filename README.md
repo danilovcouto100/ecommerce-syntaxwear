@@ -37,7 +37,7 @@ To run this project locally, simply open the `index.html` file in your web brows
 
 ```bash
 # Clone the repository
-git clone https://github.com/devemdobro/ecommerce-syntaxwear.git
+git clone https://github.com/danilovcouto100/ecommerce-syntaxwear.git
 
 # Navigate to the project directory
 cd ecommerce-syntaxwear
